@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <center> <h1>Міні веб сайт</h1> </center>
+    <table>
+        <tr>
+            <th><img src="./front-end.png" alt="Front-end"></th>
+            <th>
+                <h2>Інформація про <mark>зображення</mark>:</h2>
+                <hr>
+                <details>
+                    <summary>Деталі</summary>
+                    <p>Дякую за перегляд відео😉</p>
+                </details>
+                <br><br>
+                <audio controls>
+                    <source src="https://soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Цей тег не підтримується вашим браузером. Скачайте аудіофайл, щоб прослухати його.
+                </audio>
+            </th>
+        </tr>
+        <tr>
+            <td><iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/IyHTJTLqkCA"
+        title="YouTube video player"
+        allowfullscreen>
+    </iframe></td>
+            <td>
+                <h2><strong>Наші переваги:</strong></h2>
+        <ul>
+            <li>Супер <a href=""><em>ціни</em></a>;</li>
+            <li>Великий вибір;</li>
+            <li>Кваліфіковані спеціалісти;</li>
+        </ul>
+            </td>
+        </tr>
+    </table>
+    <h1>Зареєструватися на подію:</h1>
+    <form>
+        <label for="username">Ім'я:
+            <input type="text" placeholder="Введіть ім'я" id="username" name="username">
+        </label>
+        <br><br>
+        <label for="email">
+            Email:
+            <input type="email" id="email" name="email" placeholder="Введіть email">
+        </label>
+        <br><br>
+        <label for="password">Пароль:
+            <input type="password" id="password" name="password"
+            placeholder="Введіть пароль">
+        </label>
+        <br><br>
+        <label for="userphoto">Фотографія:
+            <input type="file" id="userphoto" name="userphoto" placeholder="Вибрати файл">
+        </label>
+        <br><br>
+            <select id="experience" name="experience">
+                <option value="" disabled selected>
+                    Досвід у програмуванні
+                </option>
+                <option value="1">1 рік</option>
+                <option value="2">2 роки</option>
+                <option value="3-4">3 - 4 роки</option>
+                <option value="5+">Більше 5 років</option>
+            </select>
+        <br><br>
+        <input list="len" placeholder="Улюблена мова">
+        <datalist id="len">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value="Java">
+            <option value="C++">
+            <option value="C#">
+        </datalist>
+        <br><br>
+        <input type="checkbox" id="agecheck">
+        <label for="agecheck">Угода користувача</label>
+        <br><br>
+        <button type="submit">
+            Відправити
+        </button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>
